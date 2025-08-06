@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio JACOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col min-h-screen h-full bg-gray-50 text-gray-800">
+    <!-- Carga de componentes -->
+    <script type="module" src="components/header-component.js"></script>
+    <script type="module" src="components/footer-component.js"></script>
+
+    <!-- Uso del componente -->
+    <header-component></header-component>
+
+    <!-- Este main crecerá para ocupar el espacio restante -->
+    <main class="flex-grow">
+      <section id="contacto" class="max-w-2xl mx-auto mt-20 px-4">
+        <h2 class="text-3xl font-semibold text-blue-900 text-center mb-6">Contáctame</h2>
+        <p class="text-gray-700 text-center mb-8">Puedes encontrarme a través de los siguientes medios:</p>
+
+        <div class="flex flex-col items-center space-y-4 text-center">
+          <b>Correo electrónico:
+            <a href="mailto:hdavid-lopez@hotmail.com" class="text-blue-600 hover:underline text-lg">
+              hdavid-lopez@hotmail.com
+            </a>
+          </b>
+
+          <b>LinkedIn:
+            <a href="https://www.linkedin.com/in/h%C3%A9ctor-david-j%C3%A1come-l%C3%B3pez-0b4014306" target="_blank" class="text-blue-600 hover:underline text-lg">
+              Héctor David Jácome López
+            </a>
+          </b>
+
+          <b>Instagram:
+            <a href="https://www.instagram.com/hdavid_jcm" target="_blank" class="text-blue-600 hover:underline text-lg">
+              @hdavid_jcm
+            </a>
+          </b>
+        </div>
+      </section>
+    </main>
+    <footer-component></footer-component>
+  </body>
+
+</html>

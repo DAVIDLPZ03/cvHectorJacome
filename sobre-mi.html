@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Portfolio JACOME</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="flex flex-col min-h-screen h-full bg-gray-50 text-gray-800">
+        <!-- Carga de componentes -->
+        <script type="module" src="components/header-component.js"></script>
+        <script type="module" src="components/footer-component.js"></script>
+
+        <!-- Uso del componente -->
+        <header-component></header-component>
+
+        <section class="max-w-4xl mx-auto mt-20 px-4 text-center">
+            <h2 class="text-3xl font-semibold text-blue-900 mb-6">SOBRE MÍ</h2>
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                <img src="perfil.jpg" alt="Foto de perfil" class="w-40 h-40 rounded-full object-cover border-4 border-blue-800 shadow-md mx-auto">
+                <p class="text-gray-700 text-lg leading-relaxed text-justify">
+                Estudiante de <span class="font-medium text-blue-800">Ingeniería Mecánica</span> y <span class="font-medium text-blue-800">Técnico Superior en Desarrollo de Aplicaciones Web</span>, 
+                con sólida formación en programación front-end y back-end, bases de datos, y desarrollo de aplicaciones web dinámicas. Apasionado por la tecnología, con capacidad para adaptarse 
+                rápidamente a nuevos lenguajes y entornos. Experiencia práctica en proyectos académicos utilizando HTML, CSS, JavaScript, PHP y frameworks como Laravel y Vue.js.
+                </p>
+            </div>
+        </section>
+
+        <section class="max-w-4xl mx-auto mt-16 px-4">
+            <h2 class="text-2xl font-semibold text-blue-900 mb-4 text-center">TRAYECTORIA ACADÉMICA</h2>
+            <ol class="relative border-l border-blue-800">
+                <li class="mb-10 ml-6">
+                    <span class="absolute -left-3 w-6 h-6 bg-blue-800 rounded-full"></span>
+                    <h3 class="text-lg font-semibold text-gray-800">2023</h3>
+                    <p class="text-gray-600">Sostenibilidad de Servicios y Productos Culturales. Desarrollo de una Metodología de Diseño Multidimensional</p>
+                </li>
+                <li class="mb-10 ml-6">
+                    <span class="absolute -left-3 w-6 h-6 bg-blue-800 rounded-full"></span>
+                    <h3 class="text-lg font-semibold text-gray-800">2023 - 2025</h3>
+                    <p class="text-gray-600">Técnico Superior en Desarrollo de Aplicaciones Web</p>
+                </li>
+                <li class="mb-10 ml-6">
+                    <span class="absolute -left-3 w-6 h-6 bg-blue-800 rounded-full"></span>
+                    <h3 class="text-lg font-semibold text-gray-800">2025</h3>
+                    <p class="text-gray-600">Formación básica sobre diagnóstico y reparación de equipos</p>
+                </li>
+                <li class="mb-10 ml-6">
+                    <span class="absolute -left-3 w-6 h-6 bg-blue-800 rounded-full"></span>
+                    <h3 class="text-lg font-semibold text-gray-800">Actualidad</h3>
+                    <p class="text-gray-600">Estudiante de Ingeniería Mecánica</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="max-w-4xl mx-auto mt-16 px-4 text-center">
+            <h2 class="text-2xl font-semibold text-blue-900 mb-6">TECNOLOGÍAS QUE MANEJO</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-12 h-12" alt="HTML5" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-12 h-12" alt="CSS3" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-12 h-12" alt="JavaScript" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-12 h-12" alt="Python" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-12 h-12" alt="React" />
+            </div>
+            <br>
+            <p>Entre otras...</p>
+        </section>
+
+
+        <footer-component></footer-component>
+    </body>
+</html>

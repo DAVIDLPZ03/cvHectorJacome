@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio JACOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col min-h-screen h-full bg-gray-50 text-gray-800">
+    <!-- Carga de componentes -->
+    <script type="module" src="components/header-component.js"></script>
+    <script type="module" src="components/footer-component.js"></script>
+
+    <!-- Uso del componente -->
+    <header-component></header-component>
+
+    <main class="flex-grow max-w-4xl mx-auto text-center mt-16 px-4">
+      <h1 class="text-4xl font-bold text-blue-900">Bienvenido a mi Portfolio Digital</h1>
+      <p class="mt-4 text-lg text-gray-600">Diseño, programo, aprendo. Y esto es solo el comienzo.</p>
+      <div class="mt-6">
+        <a href="sobre-mi.html" class="inline-block bg-blue-900 text-white px-6 py-3 rounded-md shadow hover:bg-blue-800 transition">
+          ¡Descubre quién soy!
+        </a>
+      </div>
+      
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

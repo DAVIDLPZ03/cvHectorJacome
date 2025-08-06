@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aplicaciones Interactivas con HTML5, CSS3 y JS - Jacome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col min-h-screen h-full bg-gray-50 text-gray-800">
+    <!-- Carga de componentes -->
+    <script type="module" src="components/header-component.js"></script>
+    <script type="module" src="components/footer-component.js"></script>
+
+    <!-- Uso del componente -->
+    <header-component></header-component>
+
+    <main class="flex-grow max-w-4xl mx-auto px-4 py-16">
+      <h1 class="text-4xl font-bold text-blue-900 text-center mb-6">
+        Aplicaciones Interactivas con HTML5, CSS3 y JS
+      </h1>
+      <p class="text-lg text-gray-700 text-center mb-10">
+        Creación de aplicaciones interactivas usando HTML5, CSS3 y JavaScript puro con validación de formularios
+      </p>
+
+      <!-- Imagen o preview -->
+      <div class="mb-10">
+        <img
+          src="formulario.png"
+          alt="Vista previa del diseño"
+          class="rounded-lg shadow-md mx-auto"
+        />
+      </div>
+
+      <!-- Secciones de detalle -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-blue-800 mb-3">Objetivo del Proyecto</h2>
+        <p class="text-gray-700 leading-relaxed">
+            Diseñar y desarrollar un formulario interactivo para la página web de un currículum vitae que permita 
+            al usuario ingresar datos personales y preferencias mediante distintos tipos de controles como campos de texto, 
+            lista desplegable, radiobuttons y checkboxes, además de implementar dos efectos de interactividad con JavaScript: 
+            un mensaje emergente personalizado al enviar el formulario que confirme la recepción de los datos incluyendo el 
+            nombre completo del usuario, y un reloj dinámico que se incremente automáticamente para mejorar la experiencia 
+            visual y funcional de la página.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-blue-800 mb-3">Herramientas Utilizadas</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>HTML5 estructura el contenido del currículum con formularios y controles variados usando etiquetas semánticas como section, form, input, textarea, select, y label.</li>
+          <li>CSS se utiliza mediante una hoja de estilos externa (style-cv.css) para controlar el diseño visual, incluyendo layout, tipografías, colores, tamaños y márgenes de la página.</li>
+          <li>JavaScript añade interactividad y validación, actualiza en tiempo real el reloj con setInterval y captura el envío del formulario para evitar recargas y mostrar un mensaje emergente con los datos ingresados.</li>
+        </ul>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-blue-800 mb-3">Proceso de Diseño</h2>
+        <ol class="list-decimal list-inside text-gray-700 space-y-2">
+          <li>Planificación de un formulario para currículum vitae dividido en secciones como datos personales, educación, certificados, idiomas, experiencia laboral, competencias TIC e intereses,
+            utilizando HTML5 y etiquetas 'section' para organizar el contenido semánticamente.</li>
+          <li>Creación del formulario HTML con la etiqueta 'form' y id cvForm, incluyendo campos 'input' para datos personales, además de 'textarea', 'select', radiobuttons y checkboxes para recopilar información detallada y opciones específicas.</li>
+          <li>Incorporación de un contenedor principal 'div class="container"' para organizar el contenido y facilitar el estilo, se añadió una imagen de perfil en la sección de datos personales, y se etiquetaron los inputs con 'label' para mejorar la accesibilidad y la experiencia del usuario.</li>
+          <li>Incorporación de interactividad con JavaScript mediante un reloj digital que se actualiza cada segundo en un 'div' con id clock, y un manejador del evento submit del formulario que evita la recarga de la página y muestra un mensaje emergente personalizado con el nombre completo ingresado.</li>
+          <li>Adición de metadatos 'meta' para definir el charset, habilitar la vista adaptable en móviles (viewport) y mejorar el SEO con descripción y palabras clave, además de enlazar una hoja de estilos externa (style-cv.css) para un diseño atractivo y responsivo.</li>
+          <li>Pruebas y validaciones agregando atributos `required` en campos clave para garantizar el llenado obligatorio, y se utilizó JavaScript para validar la interacción y mejorar la experiencia con alertas personalizadas.</li>
+        </ol>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-blue-800 mb-3">Resultado Final</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Se desarrolló una página web con un formulario interactivo para la recopilación de datos de un currículum vitae. El diseño está organizado en secciones claras y utiliza diversos tipos de campos para captar información detallada del usuario. Se implementaron validaciones básicas para asegurar la integridad de los datos ingresados.
+          <br>
+          Mediante JavaScript, se añadió interactividad al proyecto: al enviar el formulario, se muestra un mensaje personalizado que confirma la recepción, y un reloj digital se actualiza en tiempo real para ofrecer un elemento dinámico en la página.
+          <br>
+          El proyecto combina correctamente HTML5, CSS y JavaScript, logrando una experiencia de usuario amigable, moderna y funcional, adaptable a diferentes dispositivos y pantallas.
+
+
+        </p>
+      </section>
+
+      <!-- Botón de volver o ver prototipo -->
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+        <a
+          href="CV_Héctor_Jácome_modificado_script.html"
+          target="_blank"
+          class="bg-blue-900 text-white px-6 py-3 rounded-md shadow hover:bg-blue-800 transition text-center"
+        >
+          Ver Formulario
+        </a>
+        <a
+          href="style-cv.css"
+          target="_blank"
+          class="bg-blue-900 text-white px-6 py-3 rounded-md shadow hover:bg-blue-800 transition text-center"
+        >
+          Ver Código CSS Formulario
+        </a>
+        <a
+          href="proyectos.html"
+          class="bg-gray-300 text-gray-800 px-6 py-3 rounded-md shadow hover:bg-gray-400 transition text-center"
+        >
+          Volver a proyectos
+        </a>
+      </div>
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>

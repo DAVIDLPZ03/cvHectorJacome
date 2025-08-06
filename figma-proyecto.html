@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Diseño UI/UX con Figma - Jacome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col min-h-screen h-full bg-gray-50 text-gray-800">
+    <!-- Carga de componentes -->
+    <script type="module" src="components/header-component.js"></script>
+    <script type="module" src="components/footer-component.js"></script>
+
+    <!-- Uso del componente -->
+    <header-component></header-component>
+
+    <main class="flex-grow max-w-4xl mx-auto px-4 py-16">
+      <h1 class="text-4xl font-bold text-blue-900 text-center mb-6">
+        Diseño UI/UX con Figma
+      </h1>
+      <p class="text-lg text-gray-700 text-center mb-10">
+        Proyecto enfocado en la creación de una interfaz intuitiva y visualmente atractiva, desde el prototipo hasta la versión final.
+      </p>
+
+      <!-- Imagen o preview -->
+      <div class="mb-10">
+        <img
+          src="Figma1.png"
+          alt="Vista previa del diseño en Figma"
+          class="rounded-lg shadow-md mx-auto"
+        />
+      </div>
+
+      <!-- Secciones de detalle -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-blue-800 mb-3">Objetivo del Proyecto</h2>
+        <p class="text-gray-700 leading-relaxed">
+            Diseñar un prototipo de baja fidelidad para una aplicación web compuesta por tres 
+            pantallas clave: una interfaz de inicio de sesión, una vista general con el listado 
+            de libros y sus respectivos préstamos, y una página dedicada a mostrar información 
+            detallada de un libro específico seleccionado por el usuario.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-blue-800 mb-3">Herramientas Utilizadas</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Figma (Diseño de pantallas, componentes y prototipado)</li>
+          <li>FigJam (Mapas de flujo y diagramas de navegación)</li>
+          <li>Grids y sistemas de diseño responsive</li>
+        </ul>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-blue-800 mb-3">Proceso de Diseño</h2>
+        <ol class="list-decimal list-inside text-gray-700 space-y-2">
+          <li>Análisis de requisitos</li>
+          <li>Boceteado inicial (Wireframes)</li>
+          <li>Diseño en Figma</li>
+          <li>Revisión y ajuste final</li>
+        </ol>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-blue-800 mb-3">Resultado Final</h2>
+        <p class="text-gray-700 leading-relaxed">
+            Se desarrolló un prototipo de baja fidelidad en Figma, compuesto por tres pantallas funcionales: 
+            inicio de sesión, listado de libros y préstamos, y vista detallada de un libro. El diseño representa 
+            de forma clara la estructura y navegación básica de la aplicación, sirviendo como punto de partida para 
+            futuras fases de desarrollo o validación.
+        </p>
+      </section>
+
+      <!-- Botón de volver o ver prototipo -->
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+        <a
+          href="https://www.figma.com/proto/WLtaSO2iuiIzU9M0FUzObr/Ejercicio-1---Unidad-1-DAW?node-id=0-1&t=6PWfXoRhpIQusI9C-1"
+          target="_blank"
+          class="bg-blue-900 text-white px-6 py-3 rounded-md shadow hover:bg-blue-800 transition text-center"
+        >
+          Ver Prototipo Login
+        </a>
+        <a
+          href="https://www.figma.com/proto/WLtaSO2iuiIzU9M0FUzObr/Ejercicio-1---Unidad-1-DAW?node-id=3-30&t=6PWfXoRhpIQusI9C-1"
+          target="_blank"
+          class="bg-blue-900 text-white px-6 py-3 rounded-md shadow hover:bg-blue-800 transition text-center"
+        >
+          Ver Prototipo Listado
+        </a>
+        <a
+          href="https://www.figma.com/proto/WLtaSO2iuiIzU9M0FUzObr/Ejercicio-1---Unidad-1-DAW?node-id=4-370&t=6PWfXoRhpIQusI9C-1"
+          target="_blank"
+          class="bg-blue-900 text-white px-6 py-3 rounded-md shadow hover:bg-blue-800 transition text-center"
+        >
+          Ver Prototipo Detalle
+        </a>
+        <a
+          href="proyectos.html"
+          class="bg-gray-300 text-gray-800 px-6 py-3 rounded-md shadow hover:bg-gray-400 transition text-center"
+        >
+          Volver a proyectos
+        </a>
+      </div>
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>

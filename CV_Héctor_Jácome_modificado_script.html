@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículum Vitae de Héctor Jácome, profesional en Ingeniería Mecánica y Desarrollo de Aplicaciones Web">
+    <meta name="keywords" content="Currículum, CV, Héctor Jácome, Ingeniería Mecánica, Desarrollador Web">
+    <link rel="stylesheet" href="style-cv.css">
+    <title>Currículum Vitae | Héctor Jácome</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div id="clock">00:00:00</div>
+        <!-- Datos Personales -->
+        <form id="cvForm">
+        <section class="informacionPersonal">
+            <img src="foto.jpg" alt="Foto de Perfil" class="foto"> <!--Se agregra una foto del perfil del profesional -->  
+            <div class="nombre">
+                <p class="profesion">Ingeniero Mecánico | Desarrollador Web</p>  
+            </div>
+            <br>
+            <p><strong><label for="nombre">Nombre: </label></strong><input type="text" id="nombre" required></p>
+            <p><strong><label for="apellido1">Primer Apellido: </label></strong><input type="text" id="apellido1" required></p>
+            <p><strong><label for="apellido2">Segundo Apellido: </label></strong><input type="text" id="apellido2" required></p>
+            <p><strong><label for="fecha">Fecha de Nacimiento: </label></strong><input type="date" id="fecha" required></p>     
+            <p><strong><label for="direccion">Dirección: </label></strong><input type="text" id="direccion" placeholder="Calle, Ciudad, País" required></p>
+            <p><strong><label for="telefono">Teléfono: </label></strong><input type="number" id="telefono" required></p>
+            <p><strong><label for="email">Email: </label></strong><input type="text" id="email" required></p>
+        </section>
+
+        <!-- Resumen -->
+        <section class="resumen">
+            <h2><label for="resume">Resumen</label></h2>
+            <p><textarea type="text" id="resume" placeholder="Escribe aquí un breve resumen de tu CV" required></textarea></p>
+        </section>
+
+        <!-- Educación -->
+        <section class="Educacion">
+            <h2>Educación</h2>
+            <div class="box">
+                <input type="text" id="titulacion" placeholder="Titulación" required> 
+                <p><input type="text" id="centro" placeholder="Centro de Estudios" required>, <input type="number" id="año_tit" placeholder="Año de titulación" required></p>
+            </div>
+            <p><textarea type="text" id="resume1" placeholder="Resume tus estudios"></textarea></p>
+            <div><p>
+                <br>
+            </p></div>
+            <div class="box">
+                <input type="text" id="titulacion" placeholder="Titulación" required> 
+                <p><input type="text" id="centro" placeholder="Centro de Estudios" required>, <input type="number" id="año_tit" placeholder="Año de titulación" required></p>
+            </div>
+            <p><textarea type="text" id="resume1" placeholder="Resume tus estudios"></textarea></p>
+        </section>
+
+        <!-- Certificados -->
+        <section class="Certificados">
+            <h2>Certificados</h2>
+                <div class="box">
+                    <input type="text" id="certificado" placeholder="Certificado" required> 
+                    <p><input type="text" id="centro1" placeholder="Centro concedido" required>, <input type="number" id="año_tit" placeholder="Año de concesión" required></p>
+                </div>
+                <p><textarea type="text" id="resume1" placeholder="Resume el tema del certificado"></textarea></p>
+        </section>
+
+        <!-- Idiomas -->
+        <section class="Idiomas">
+            <h2>Idiomas</h2>
+            <input type="checkbox" id="ingles" name="idiomas" value="ingles">
+            <label for="ingles">Inglés</label>
+            <input type="checkbox" id="frances" name="idiomas" value="frances">
+            <label for="frances">Francés</label>
+            <input type="checkbox" id="espanol" name="idiomas" value="espanol">
+            <label for="espanol">Español</label>
+            <input type="checkbox" id="aleman" name="idiomas" value="aleman">
+            <label for="aleman">Alemán</label>
+        </section>
+
+        <!-- Experiencia Laboral -->
+        <section class="Experiencia">
+            <h2>Experiencia Laboral</h2>
+            <div class="item">
+                <h3><input type="text" id="prof1" placeholder="Puesto" required></h3>
+                <select id="tipo" name="tipo">
+                    <option value="empresa">Empresa</option>
+                    <option value="autonomo">Autónomo</option>
+                </select>
+                <input type="radio" id="espana" name="ubicacion" value="espana" required>
+                <label for="espana">España</label>
+                <input type="radio" id="extranjero" name="ubicacion" value="extranjero">
+                <label for="extranjero">Extranjero</label>
+                <br><br>
+                <textarea type="text" id="resume2" placeholder="Explica tus tareas y labores"></textarea>
+            </div>
+            <div class="item">
+                <h3><input type="text" id="prof2" placeholder="Puesto" required></h3>
+                <select id="tipo" name="tipo">
+                    <option value="empresa">Empresa</option>
+                    <option value="autonomo">Autónomo</option>
+                </select>
+                <input type="radio" id="espana1" name="ubi" value="espana1" required>
+                <label for="espana1">España</label>
+                <input type="radio" id="extranjero1" name="ubi" value="extranjero1">
+                <label for="extranjero1">Extranjero</label>
+                <br><br>
+                <textarea type="text" id="resume2" placeholder="Explica tus tareas y labores"></textarea>
+            </div>
+        </section>
+
+        <!-- Competencias TIC -->
+        <section class="Habilidades">
+            <h2>Competencias TIC</h2>
+            <textarea type="text" id="resume2" placeholder="Explica tus competencias digitales"></textarea>
+        </section>
+
+        <!-- Intereses -->
+        <section class="Intereses">
+            <h2>Intereses</h2>
+            <textarea type="text" id="resume2" placeholder="Cuenta tus interes y aficiones"></textarea>
+        </section>
+        <br>
+        <div class="form-group">
+            <button type="submit">Enviar</button>
+        </div>
+        </form>
+    </div>
+    <script>
+        // Función para mostrar la hora actual y actualizarla cada segundo
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            document.getElementById("clock").textContent = `${hours}:${minutes}:${seconds}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock(); // Iniciar el reloj al cargar la página
+
+        // Capturar el envío del formulario y mostrar un mensaje emergente
+        document.getElementById("cvForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita que la página se recargue
+
+            // Obtener los valores del formulario
+            let nombre = document.getElementById("nombre").value;
+            let apellido1 = document.getElementById("apellido1").value;
+            let apellido2 = document.getElementById("apellido2").value;
+
+            // Mostrar mensaje emergente
+            alert(`Mensaje recibido, señor ${nombre} ${apellido1} ${apellido2}`);
+        });
+    </script>
+    
+</body>
+
+</html>

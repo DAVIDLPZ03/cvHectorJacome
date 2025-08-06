@@ -1,0 +1,105 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .box{
+            background-color: #08004d;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #d4ecec;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+        
+        h1, h2 {
+            color: #2c3e50;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 28px;
+            margin-top: 20px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            font-size: 22px;
+            color: #34495e;
+        }
+        
+        p, li {
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+        
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .nombre h1{
+            margin-bottom: 1px;
+        }
+        .nombre p{
+            color: #1a015b;
+        }
+        .apellido{
+            color: #41b3c7;
+        }
+        .profesion{
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+        .Curso{
+            color: white;
+        }
+        
+        .item {
+            margin-bottom: 20px;
+        }
+        
+        .informacionPersonal p {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .Habilidades ul, .Idiomas ul {
+            padding-left: 20px;
+        }
+        
+        .Habilidades li, .Idiomas li {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        
+        .Intereses p {
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .foto {
+            width: 120px;
+            height: 120px;
+            border-radius: 80%;
+            object-fit: cover;
+        }

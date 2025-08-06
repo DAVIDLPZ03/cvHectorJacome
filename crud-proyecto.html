@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aplicación CRUD con PHP y MySQL - Portfolio JACOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col min-h-screen h-full bg-gray-50 text-gray-800">
+    <!-- Carga de componentes -->
+    <script type="module" src="components/header-component.js"></script>
+    <script type="module" src="components/footer-component.js"></script>
+
+    <!-- Uso del componente -->
+    <header-component></header-component>
+
+    <main class="flex-grow max-w-4xl mx-auto px-4 py-16">
+      <h1 class="text-4xl font-bold text-blue-900 text-center mb-6">
+        Aplicación CRUD con PHP y MySQL
+      </h1>
+      <p class="text-lg text-gray-700 text-center mb-10">
+        Desarrollo de una aplicación web CRUD con PHP y MySQL, con gestión de archivos y conexión dinámica mediante JavaScript y Fetch API.
+      </p>
+
+      <!-- Imagen representativa -->
+      <div class="mb-10">
+        <img
+          src="crud.png"
+          alt="Captura de pantalla Aplicación CRUD"
+          class="rounded-lg shadow-md mx-auto"
+        />
+      </div>
+
+      <!-- Secciones del proyecto -->
+      <section class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-800 mb-3">Objetivo del Proyecto</h2>
+        <p class="text-gray-700 leading-relaxed">
+            Desarrollar un servicio web que proporcione funcionalidad a una página web mediante JavaScript, 
+            permitiendo la conexión con una base de datos para realizar operaciones CRUD. Además, el proyecto 
+            deberá incluir una funcionalidad para la subida y gestión de archivos en el servidor, así como un 
+            documento descriptivo que detalle el funcionamiento del servicio implementado.
+        </p>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-800 mb-3">Herramientas Utilizadas</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>PHP gestiona la lógica del servidor con archivos CRUD y protege con bind_param() contra inyecciones SQL.</li>
+          <li>MySQL gestiona la base de datos, almacenando ítems con nombre, descripción y archivo</li>
+          <li>HTML5 define la estructura de la interfaz con un formulario para CRUD y subida de archivos.</li>
+          <li>JavaScript gestiona la interacción del cliente y usa *fetch* para comunicarse con el backend vía API REST</li>
+          <li>FormData API permite enviar datos y archivos al backend desde JavaScript</li>
+          <li>Apache aloja los archivos .php y sirve la aplicación en rutas tipo localhost</li>
+          <li>El sistema de archivos del servidor almacena los archivos subidos en la carpeta "upload/"</li>
+        </ul>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-800 mb-3">Proceso de Desarrollo</h2>
+        <ol class="list-decimal list-inside text-gray-700 space-y-2">
+          <li>Diseño de la base de datos con tablas para almacenar ítems con campos como nombre, descripción y archivo.</li>
+          <li>Configuración del backend en PHP incluyendo archivos create.php, read.php, update.php y delete.php para las operaciones CRUD.</li>
+          <li>Implementación de la subida de archivos al servidor, vinculándolos con los ítems en la base de datos.</li>
+          <li>Desarrollo de una interfaz simple en index.html con un formulario y una lista dinámica de ítems usando HTML y JavaScript.</li>
+          <li>Integración de JavaScript con la interfaz mediante Fetch API para realizar peticiones asíncronas al backend.</li>
+          <li>Pruebas y ajustes finales para verificar las operaciones CRUD, la subida de archivos y la actualización dinámica de la interfaz.</li>
+        </ol>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-800 mb-3">Resultado Final</h2>
+        <p class="text-gray-700 leading-relaxed">
+            La aplicación permite una gestión completa y fluida de registros con archivos adjuntos, mediante una interfaz dinámica conectada al backend con PHP y MySQL, optimizando la experiencia del usuario sin recargas.
+        </p>
+      </section>
+
+      <section class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-800 mb-3">Vídeo Explicativo</h2>
+        <video width="640" height="360" controls>
+            <source src="crud.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+      </section>
+
+      <!-- Botones para volver o ver más -->
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+        <a
+          href="api-rest.zip" 
+          target="_blank"
+          class="bg-blue-900 text-white px-6 py-3 rounded-md shadow hover:bg-blue-800 transition text-center"
+        >
+          Ver carpeta de código
+        </a>
+        <a
+          href="proyectos.html"
+          class="bg-gray-300 text-gray-800 px-6 py-3 rounded-md shadow hover:bg-gray-400 transition text-center"
+        >
+          Volver a proyectos
+        </a>
+      </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+  <script>
+
+  </script>
+</html>
